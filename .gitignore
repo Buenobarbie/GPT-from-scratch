@@ -1,2 +1,3 @@
 /data/**
-/models/model2.pth
+/models/**
+!/model/.gitkeep
