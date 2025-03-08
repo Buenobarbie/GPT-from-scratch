@@ -31,9 +31,9 @@ pip install torch
 
 ### Running in Google Colab
 
-Click the badge below to open the notebook in Google Colab:
+The main script is [`gpt_BPE.ipynb`](https://github.com/Buenobarbie/GPT-from-scratch/blob/master/code/gpt_BPE.ipynb), where you can create, load, and train models using Byte Pair Encoding (BPE) for tokenization. To run it in Colab, simply navigate to the file on GitHub and click the "Open with Colab" icon.
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Buenobarbie/GPT-from-scratch/blob/master/gpt_dev.ipynb)
+I recommend using the **T4 GPU** in Colab for optimal performance, as it’s available for free within the usage limits.
 
 
 
