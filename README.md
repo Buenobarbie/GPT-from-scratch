@@ -1,6 +1,6 @@
 # GPT-from-scratch
 
-This project follows Andrej Karpathy's tutorial on building a GPT model from scratch, with modifications to generate text resembling WhatsApp conversations instead of Shakespearean text.
+This project follows [Andrej Karpathy's tutorial](https://www.youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ) on building a GPT model from scratch, with modifications to generate text resembling WhatsApp conversations instead of Shakespearean text.
 
 ## Features
 - Implements a Transformer-based GPT model using PyTorch.
@@ -47,7 +47,7 @@ Click the badge below to open the notebook in Google Colab:
 Modify the `prompt` variable to provide a conversation starter:
 
 ```python
-prompt = "Bárbara: A camisa nova de roma é"
+prompt = "Bárbara: Você é"
 prompt_encoded = encode(prompt)
 idx = torch.tensor([prompt_encoded], dtype=torch.long, device=device)
 print(decode(model.generate(idx, max_new_tokens=500)[0].tolist()))
@@ -59,7 +59,7 @@ To save the trained model:
 ```python
 SAVE = True
 if SAVE:
-    torch.save(model.state_dict(), '../models/model2.pth')
+    torch.save(model.state_dict(), '../models/model.pth')
 ```
 
 To load an existing model:
